@@ -10,7 +10,11 @@ const about = require("./about.json");
 const app = express();
 
 // set up middleware
-app.use(cors());
+app.use(cors({ origin: 'https://tiago-backend.netlify.app' }));
+//This will allow requests from the Netlify domain only. If you want to allow requests from any domain, you can use the following line instead:
+//
+// app.use(cors());
+// Make sure to remove the cors middleware in your server.js file before deploying to Netlify since Netlify sets up the necessary CORS headers automatically for you.
 
 
 //home route for testing our app
