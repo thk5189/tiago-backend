@@ -10,7 +10,6 @@ const about = require("./about.json");
 const app = express();
 
 // set up middleware
-
 app.use(cors());
 
 
@@ -18,7 +17,6 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-
 
 // route for retrieving projects
 app.get("/projects", (req, res) => {
