@@ -10,18 +10,15 @@ const about = require("./about.json");
 const app = express();
 
 // set up middleware
-app.use(cors({ origin: '*' }));
 
-//This will allow requests from the Netlify domain only. If you want to allow requests from any domain, you can use the following line instead:
-//
-// app.use(cors());
-// Make sure to remove the cors middleware in your server.js file before deploying to Netlify since Netlify sets up the necessary CORS headers automatically for you.
+app.use(cors());
 
 
 //home route for testing our app
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
+
 
 // route for retrieving projects
 app.get("/projects", (req, res) => {
