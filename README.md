@@ -12,5 +12,8 @@ Retrieves a list of projects.
 GET /about
 Retrieves information about the author.
 
+Heroku deployment link:
+https://git.heroku.com/tiago-backend.git
+
 Live Site link:
 https://tiagokim.com
