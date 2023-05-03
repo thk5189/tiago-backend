@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hire", (req, res) => {
-  res.send("Hello World");
+  res.json(hire);
 });
 
 // route for retrieving projects
