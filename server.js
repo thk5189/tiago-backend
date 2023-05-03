@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
+app.get("/hire", (req, res) => {
+  res.send("Hello World");
+});
+
 // route for retrieving projects
 app.get("/projects", (req, res) => {
   // send projects via JSON
@@ -29,6 +33,7 @@ app.get("/about", (req, res) => {
   // send projects via JSON
   res.json(about);
 });
+
 
 //declare a variable for our port number
 const PORT = process.env.PORT || 3000;
